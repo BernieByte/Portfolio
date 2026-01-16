@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Profile Page</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://t3.ftcdn.net/jpg/11/66/58/74/360_F_1166587468_ZopHWl13KwyUV9w2fQiQxO2M29gkDKDB.jpg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+       <nav class="navbar">
+    <a href="#" class="logo">BernieByte</a>
+    
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Front-End Developer & SQL Enthusiast</h1>
+                <p>Building websites with HTML, CSS, and JavaScript — while sharpening my eye for design.</p>
+                  <!-- <a href="#contact" class="cta-button">Let's Connect!</a>-->
+            </div>
+
+            <div class="hero-image">
+                <img src="https://blob.sololearn.com/avatars/94d3c80d-9c28-4f0a-a497-fba21d473e47.jpg">
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2>Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS & JavaScript</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>Intermediate SQL</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                Hi, I’m <strong>BernieByte</strong> — a passionate Front-End Developer & SQL Enthusiast.  
+                I love creating cool, functional websites and learning new technologies along the way.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <ul class="projects-list">
+                <li><a href="https://www.sololearn.com/en/compiler-playground/W5T6S7YYQbmV">TicTacToe Game</a></li>
+                <li><a href="#">More Projects in progress</a></li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>If you’d like to collaborate or just say hi, feel free to reach out!</p>
+            <a href="mailto:lordbernardd@gmail.com" class="cta-button">Send Email</a>
+        </section>
+
+        <footer>
+            <p>&copy BernieByte. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </header>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('open');
+    });
+});
+</script>
+</body>
+</html>
